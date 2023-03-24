@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75cfc718-eb7d-4799-b1fc-2644f9b7bc85">
+  <producedTypes>
+    <objectType typeId="08d7a519-c6f9-4206-94ec-b6277b46dd82" valueTypeId="710f5bcd-617b-430e-869e-6d1576a3e126"/>
+    <refType typeId="f8ed4dc0-8f38-4fd9-937b-7461e06693c9" valueTypeId="778e0601-47dc-44d9-bc35-db9036a0eeed"/>
+    <selectionType typeId="f6ef8f01-e2f5-4379-9c97-b6138b67d07d" valueTypeId="0be5bba7-62e7-4c61-a172-823d3ed2052f"/>
+    <listType typeId="a3821d7e-c3b2-4b6a-9a64-36a838b64307" valueTypeId="af254538-7ccd-413b-ac40-ff2b958e68c8"/>
+    <managerType typeId="0c6512ca-16f8-4828-992e-b48bfa3e8140" valueTypeId="e5967139-d0b1-4b2a-a734-092fc8d66fa6"/>
+  </producedTypes>
+  <name>Группы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Группы.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Группы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер группы</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Группа</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Группы</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>6</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

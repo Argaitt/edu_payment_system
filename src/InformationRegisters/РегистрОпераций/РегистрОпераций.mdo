@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6ed7326-03ea-4ce7-a744-77fda92d7cc3">
+  <producedTypes>
+    <selectionType typeId="938785f3-09a2-40be-b6d9-59ce09482a96" valueTypeId="0a2a9879-d7fe-4165-949f-53b5d6143d09"/>
+    <listType typeId="eb61c6c8-6de5-4f73-9f41-72feaace1f39" valueTypeId="6ff2bc9b-ba37-4136-8028-25c4bd9b1e89"/>
+    <managerType typeId="da8a258b-3d6f-4302-9bbc-61fa7a1807b5" valueTypeId="cedc534a-9c9b-4699-bfb9-eaee955f11e5"/>
+    <recordSetType typeId="e4bd5337-c51d-4292-a081-6ed3e29a4676" valueTypeId="acebc0e6-ea0d-4d6b-947a-343c73ac63c1"/>
+    <recordKeyType typeId="b8821d69-2a8a-411e-8963-594d3f50baeb" valueTypeId="e3825009-b093-4c76-8ebb-419886812dbe"/>
+    <recordType typeId="cf519414-4637-4570-acf3-6bdf31b85fd5" valueTypeId="8e1e7dba-c4d4-4639-b3e1-b3d5e23fbcb6"/>
+    <recordManagerType typeId="cfe25f6f-572a-45d8-b285-cc20c2bd70d7" valueTypeId="f0fa615f-8b9a-425c-ae32-cb22dd3224ae"/>
+  </producedTypes>
+  <name>РегистрОпераций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр операций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Операция</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Список операций</value>
+  </listPresentation>
+  <resources uuid="5d027393-3d39-4eba-a26f-ebb312759fcd">
+    <name>ТипОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип операции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b04cb82c-2376-4a90-9ff4-e31cd28fe9b3">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e8957b1f-626b-4fc3-aeea-f3867cae9c58">
+    <name>Студент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

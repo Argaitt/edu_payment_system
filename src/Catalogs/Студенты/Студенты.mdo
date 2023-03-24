@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="472fa8a5-ef66-49b4-a391-f62d9a5c2761">
+  <producedTypes>
+    <objectType typeId="147d7587-4a68-4e18-b210-aeea3f45d858" valueTypeId="77a3cd7b-452d-4a57-b715-4b5058edf2e2"/>
+    <refType typeId="da0d0ac0-eff4-42bc-897a-228686736012" valueTypeId="5720f24a-2b65-4dc2-9b94-5e3da047a4fe"/>
+    <selectionType typeId="c0493301-e98d-451a-a4ca-b5c13566c8b1" valueTypeId="5f4d361a-f8b1-4b50-9c79-bc1c57776cc9"/>
+    <listType typeId="bf4dc953-02b0-42ee-9815-42a623f84310" valueTypeId="06405b82-fb51-405a-81a7-96fb08340e8a"/>
+    <managerType typeId="65577710-13bb-4f23-95a7-318459fec11b" valueTypeId="df366833-ef83-4136-9baf-1df67784e517"/>
+  </producedTypes>
+  <name>Студенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Студенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Студенты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Студенты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя Фамилия Отчество</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Студент</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Студенты</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="77cf4511-0f70-45f8-8b80-031ec3aa255c">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Группы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

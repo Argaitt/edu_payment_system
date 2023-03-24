@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21b214b0-2cf6-4db1-8ad7-68fcb95ead27">
+  <producedTypes>
+    <selectionType typeId="5fc5509f-a100-48bf-b768-0396476d5539" valueTypeId="294b10f4-f6e7-4d86-a01f-bdff656982cd"/>
+    <listType typeId="477f8b93-6e34-414d-8129-f8e5fe27a9f8" valueTypeId="1fa097e0-5c70-418c-9de7-d583864dcd7a"/>
+    <managerType typeId="23122a37-51c3-4d83-85d5-10e9996b480d" valueTypeId="dfa7a0dc-3a3b-4d45-a81a-1095e060abc4"/>
+    <recordSetType typeId="c0c8a36e-28cd-4b2f-8e22-76430af63a8c" valueTypeId="c8bb4c3f-d41a-487e-8243-a3e00de23123"/>
+    <recordKeyType typeId="b9501f0c-a6c9-413f-8524-3392a3337f93" valueTypeId="f56aeb58-a234-46b2-9889-936bca6b17a5"/>
+    <recordType typeId="4e658f46-1473-481e-b68a-260db7b7e6a0" valueTypeId="f2bb3a9e-7a9a-4703-93a2-bda7eb44fb82"/>
+  </producedTypes>
+  <name>ОстаткиПениСтудентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки пени студентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="eb877e46-8ca2-45c7-ae45-c9a4d6b5aadb">
+    <name>СуммаПени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма пени</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="aea8ae91-a37d-4497-a1d5-02f91d538e75">
+    <name>Студент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

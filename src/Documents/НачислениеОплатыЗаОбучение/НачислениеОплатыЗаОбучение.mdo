@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="736a5650-5c41-4841-8ae6-ab9751c47b99">
+  <producedTypes>
+    <objectType typeId="b1399c15-85ec-4926-9d64-b35c5c2161d6" valueTypeId="26b77ef9-dbfb-4b22-97b8-905eb5e0466c"/>
+    <refType typeId="7d2c3b51-90ad-4087-a20f-12c292946bac" valueTypeId="60e6471c-a553-4ae9-b318-6b55845f182e"/>
+    <selectionType typeId="55f7f55d-f2e8-4497-8282-5bbbf523aaed" valueTypeId="cec1a653-4020-4b54-aa86-be7d1b1241c4"/>
+    <listType typeId="4abfc275-4943-4476-a556-5eba505733ba" valueTypeId="73fcfa97-0525-4d34-8c8c-ee305a9335bb"/>
+    <managerType typeId="8ff12466-ac25-46b7-8ddc-3eb8db366930" valueTypeId="5051ed44-393d-4a09-a55f-261a0542180c"/>
+  </producedTypes>
+  <name>НачислениеОплатыЗаОбучение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление оплаты за обучение</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачислениеОплатыЗаОбучение.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиНачисленийСтудентов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b6c2414f-126a-4054-8fc3-bb896ce34574">
+    <name>Студент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Студент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Студенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f1a38f5-3625-444b-87c1-55f14f1c0134">
+    <name>СуммаЗачисленнойОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма зачисленной оплаты</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="31e344e5-a31e-41f7-8ac6-db3214da8d29">
+    <name>ДатаОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата оплаты</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

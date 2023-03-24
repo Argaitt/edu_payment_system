@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="374f7e59-67fe-4820-8471-de326b82145f">
+  <name>ОплатаОбученияСтудентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата обучения студентов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Группы</content>
+  <content>Catalog.Студенты</content>
+  <content>Document.НачислениеОплатыЗаОбучение</content>
+  <content>Document.ПогашениеОплатыЗаОбучение</content>
+  <content>AccumulationRegister.ОстаткиНачисленийСтудентов</content>
+  <content>InformationRegister.РегистрОпераций</content>
+</mdclass:Subsystem>

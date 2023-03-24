@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Catalog.Группы.StandardCommand.Create</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.Студенты.StandardCommand.Create</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>AccumulationRegister.ОстаткиНачисленийСтудентов.StandardCommand.OpenList</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>AccumulationRegister.ОстаткиНачисленийСтудентов.StandardCommand.OpenList</commands>
+      <commands>Document.НачислениеОплатыЗаОбучение.StandardCommand.OpenList</commands>
+      <commands>Document.ПогашениеОплатыЗаОбучение.StandardCommand.OpenList</commands>
+      <commands>Catalog.Студенты.StandardCommand.OpenList</commands>
+      <commands>Catalog.Группы.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>
