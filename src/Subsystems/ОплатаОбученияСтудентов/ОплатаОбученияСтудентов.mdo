@@ -13,4 +13,6 @@
   <content>Document.ПогашениеОплатыЗаОбучение</content>
   <content>AccumulationRegister.ОстаткиНачисленийСтудентов</content>
   <content>InformationRegister.РегистрОпераций</content>
+  <content>CommonCommand.РучноеНачислениеПениСтудентам</content>
+  <content>InformationRegister.РегистрНоминалаПени</content>
 </mdclass:Subsystem>

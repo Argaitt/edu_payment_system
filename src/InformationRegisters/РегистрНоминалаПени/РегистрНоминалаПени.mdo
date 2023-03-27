@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fd81368-e15c-4cd6-93f2-8a67db2f7f7b">
+  <producedTypes>
+    <selectionType typeId="3f8dd8f5-f1af-4205-9e69-0cce8214e379" valueTypeId="bde8f054-6546-46c2-895b-8aa752e108c3"/>
+    <listType typeId="70fdd7d0-38b2-472c-8676-313b779b6fcd" valueTypeId="91086fc9-7410-4abd-80ae-3a31f38cf5c6"/>
+    <managerType typeId="2781d81e-a455-4c18-b5d7-70c7cac42724" valueTypeId="1b61325f-eb5f-4a03-b451-2ef721fed09b"/>
+    <recordSetType typeId="e57f5651-9624-4ff0-a745-2b6acc50330a" valueTypeId="226c8ad9-d389-4403-bed2-5a47ba4b12b6"/>
+    <recordKeyType typeId="2fd490a7-17e4-4b9d-a133-b7cbb396cd9f" valueTypeId="75aa623b-51dc-44d5-aaca-73abe39cecd1"/>
+    <recordType typeId="721454be-f990-4071-9a3a-7aa06b0a7dbf" valueTypeId="dec3ac10-0fdf-42b4-a713-84ea6b9be053"/>
+    <recordManagerType typeId="aa8fa2c8-9d46-48a0-8130-eaf96d048ca2" valueTypeId="5fd81d2c-8d10-45f1-9feb-450aa7e74206"/>
+  </producedTypes>
+  <name>РегистрНоминалаПени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр номинала пени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="eb5afea3-0398-4b47-878d-6b16c68be09d">
+    <name>НоминалПени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номинал пени (%)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=5; ЧДЦ=2; ЧФ=Ч%</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=5; ЧДЦ=2; ЧФ=Ч%</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="99bd3a58-3ed4-4ea7-a2fb-46eb1b82221a">
+    <name>ДатаВступления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата вступления в силу</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

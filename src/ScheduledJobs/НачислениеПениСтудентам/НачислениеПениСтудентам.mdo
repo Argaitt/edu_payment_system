@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66e52603-4df2-40f2-8e51-6af944d55812">
+  <name>НачислениеПениСтудентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление пени студентам</value>
+  </synonym>
+  <methodName>CommonModule.НачислениеПениСервер.НачислениеПениСтудентам</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -40,10 +40,17 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.ОплатаОбученияСтудентов</subsystems>
+  <subsystems>Subsystem.СкрытаяЧасть</subsystems>
+  <commonModules>CommonModule.НачислениеПениСервер</commonModules>
+  <scheduledJobs>ScheduledJob.НачислениеПениСтудентам</scheduledJobs>
+  <commonCommands>CommonCommand.РучноеНачислениеПениСтудентам</commonCommands>
   <catalogs>Catalog.Группы</catalogs>
   <catalogs>Catalog.Студенты</catalogs>
   <documents>Document.НачислениеОплатыЗаОбучение</documents>
+  <documents>Document.НачислениеПениПоЗадолженности</documents>
   <documents>Document.ПогашениеОплатыЗаОбучение</documents>
+  <documents>Document.ПогашениеПениПоЗадолженности</documents>
+  <informationRegisters>InformationRegister.РегистрНоминалаПени</informationRegisters>
   <informationRegisters>InformationRegister.РегистрОпераций</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНачисленийСтудентов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиПениСтудентов</accumulationRegisters>

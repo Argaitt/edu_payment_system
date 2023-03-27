@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6fc2828-ebb0-41c5-92b0-dac91edbd318">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8a2e5bd-f9db-468c-a69c-5c540d1d995e">
   <producedTypes>
-    <objectType typeId="bcb0217b-ba37-425c-a46f-0bfe0ce4e9da" valueTypeId="990d31f9-34f7-4608-9b4a-70087f5a5910"/>
-    <refType typeId="4679380f-dbca-46c0-a051-d8d8180376e1" valueTypeId="2bc9b779-28c8-468d-9745-099e79e11154"/>
-    <selectionType typeId="e334eaf0-ce77-4a63-8b64-3e538e283a9f" valueTypeId="c48c44c0-586e-4857-af01-eaee85368182"/>
-    <listType typeId="740cefff-a997-434c-8d8b-6b7a3778c4fa" valueTypeId="9ef26b8c-e019-4baa-aa35-f990b629da7e"/>
-    <managerType typeId="13817e30-5cad-465c-981a-7ede661a1a94" valueTypeId="c101ce0d-7175-4aeb-85bf-52d432bd7a2b"/>
+    <objectType typeId="95a4b03d-1053-4aa1-b455-07d86601bc68" valueTypeId="fbc02785-aed7-4eed-bf93-a349e05adc89"/>
+    <refType typeId="579edbd6-77d8-47f6-8e58-2d5fb44bf081" valueTypeId="baa2b2d6-2516-4c8c-9446-eb914248c68e"/>
+    <selectionType typeId="a536d91b-70f3-4547-80e9-2b708bc92547" valueTypeId="8b1a7323-3c6c-475b-a857-488bf2831893"/>
+    <listType typeId="bb51cf2c-9895-4a48-bbad-34ed0fb87c06" valueTypeId="4ab8e970-2577-4e40-919f-18b60e62796d"/>
+    <managerType typeId="d4511bc5-1dcc-4a74-b1ae-06e18fcfac3f" valueTypeId="01efcf17-6963-4df5-813d-bf82b05de3b2"/>
   </producedTypes>
-  <name>ПогашениеОплатыЗаОбучение</name>
+  <name>НачислениеПениПоЗадолженности</name>
   <synonym>
     <key>ru</key>
-    <value>Погашение оплаты за обучение</value>
+    <value>Начисление пени по задолженности</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ПогашениеОплатыЗаОбучение.StandardAttribute.Number</inputByString>
+  <inputByString>Document.НачислениеПениПоЗадолженности.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -23,10 +23,10 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <registerRecords>AccumulationRegister.ОстаткиНачисленийСтудентов</registerRecords>
+  <registerRecords>AccumulationRegister.ОстаткиПениСтудентов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="d9920220-25f3-4f13-9d8a-d9e26db71599">
+  <attributes uuid="81ec1d59-1d6f-4eae-ae56-eb71d047f5ad">
     <name>Студент</name>
     <synonym>
       <key>ru</key>
@@ -37,16 +37,15 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="3474f6b5-4bf8-4693-a500-47fc9c7a2df1">
-    <name>ЗачисленнаяСумма</name>
+  <attributes uuid="92bcecda-8f6f-4780-a128-c9b420afa878">
+    <name>НачисленнаяПеня</name>
     <synonym>
       <key>ru</key>
-      <value>Зачисленная сумма для погашения оплаты</value>
+      <value>Начисленная пеня</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -56,14 +55,6 @@
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
-    <format>
-      <key>ru</key>
-      <value>ЧЦ=15; ЧДЦ=2</value>
-    </format>
-    <editFormat>
-      <key>ru</key>
-      <value>ЧЦ=15; ЧДЦ=2</value>
-    </editFormat>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
