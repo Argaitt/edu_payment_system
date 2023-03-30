@@ -9,4 +9,6 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.НачислениеПениПоЗадолженности</content>
   <content>Document.ПогашениеПениПоЗадолженности</content>
+  <content>AccumulationRegister.ОстаткиНачисленийСтудентов</content>
+  <content>AccumulationRegister.ОстаткиПениСтудентов</content>
 </mdclass:Subsystem>

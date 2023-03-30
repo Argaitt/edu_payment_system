@@ -24,6 +24,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <registerRecords>AccumulationRegister.ОстаткиНачисленийСтудентов</registerRecords>
+  <registerRecords>InformationRegister.РегистрОпераций</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="b6c2414f-126a-4054-8fc3-bb896ce34574">
