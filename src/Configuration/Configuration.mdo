@@ -50,6 +50,10 @@
   <documents>Document.НачислениеПениПоЗадолженности</documents>
   <documents>Document.ПогашениеОплатыЗаОбучение</documents>
   <documents>Document.ПогашениеПениПоЗадолженности</documents>
+  <reports>Report.ДолжникиОтчет</reports>
+  <reports>Report.ОперацииОтчет</reports>
+  <reports>Report.СтудентОтчет</reports>
+  <reports>Report.СтудентыОтчет</reports>
   <informationRegisters>InformationRegister.РегистрНоминалаПени</informationRegisters>
   <informationRegisters>InformationRegister.РегистрОпераций</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНачисленийСтудентов</accumulationRegisters>
