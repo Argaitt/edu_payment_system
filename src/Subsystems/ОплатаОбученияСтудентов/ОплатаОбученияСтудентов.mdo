@@ -17,4 +17,5 @@
   <content>Report.СтудентОтчет</content>
   <content>Report.ОперацииОтчет</content>
   <content>Report.СтудентыОтчет</content>
+  <content>Report.ДолжникиОтчет</content>
 </mdclass:Subsystem>

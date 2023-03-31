@@ -14,104 +14,81 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПениНачальныйОстаток</dataPath>
-			<field>СуммаПениНачальныйОстаток</field>
+			<dataPath>Студент1</dataPath>
+			<field>Студент1</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипОперации</dataPath>
+			<field>ТипОперации</field>
 			<role>
-				<dcscom:balance>true</dcscom:balance>
-				<dcscom:balanceGroupName>СуммаПени</dcscom:balanceGroupName>
-				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПениПриход</dataPath>
-			<field>СуммаПениПриход</field>
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПениРасход</dataPath>
-			<field>СуммаПениРасход</field>
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаПениКонечныйОстаток</dataPath>
-			<field>СуммаПениКонечныйОстаток</field>
-			<role>
-				<dcscom:balance>true</dcscom:balance>
-				<dcscom:balanceGroupName>СуммаПени</dcscom:balanceGroupName>
-				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
-			</role>
+			<dataPath>ГруппаНаименование</dataPath>
+			<field>ГруппаНаименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПени</dataPath>
+			<field>СуммаПени</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ОстаткиПениСтудентовОстаткиИОбороты.Студент,
-	ОстаткиПениСтудентовОстаткиИОбороты.СуммаПениНачальныйОстаток,
-	ОстаткиПениСтудентовОстаткиИОбороты.СуммаПениПриход,
-	ОстаткиПениСтудентовОстаткиИОбороты.СуммаПениРасход,
-	ОстаткиПениСтудентовОстаткиИОбороты.СуммаПениКонечныйОстаток
+	Студенты.Наименование,
+	Студенты.Группа.Наименование,
+	ОстаткиПениСтудентов.Студент,
+	ОстаткиПениСтудентов.СуммаПени,
+	РегистрОпераций.Студент,
+	РегистрОпераций.ТипОперации,
+	РегистрОпераций.Сумма
 ИЗ
-	РегистрНакопления.ОстаткиПениСтудентов.ОстаткиИОбороты КАК ОстаткиПениСтудентовОстаткиИОбороты</query>
+	РегистрСведений.РегистрОпераций КАК РегистрОпераций
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Студенты КАК Студенты
+		ПО РегистрОпераций.Студент = Студенты.Ссылка,
+	РегистрНакопления.ОстаткиПениСтудентов КАК ОстаткиПениСтудентов</query>
 	</dataSet>
-	<parameter>
-		<name>НачалоПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Начало периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<useRestriction>false</useRestriction>
-	</parameter>
-	<parameter>
-		<name>КонецПериода</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Конец периода</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<useRestriction>false</useRestriction>
-	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Студент</dcsset:field>
+					<dcsset:field>Наименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаПениНачальныйОстаток</dcsset:field>
+					<dcsset:field>ГруппаНаименование</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаПениПриход</dcsset:field>
+					<dcsset:field>СуммаПени</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаПениРасход</dcsset:field>
+					<dcsset:field>ТипОперации</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаПениКонечныйОстаток</dcsset:field>
+					<dcsset:field>Сумма</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>НачалоПериода</dcscor:parameter>
-					<dcsset:userSettingID>6a8fbff9-714a-4aca-84cd-a73a046d12eb</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>КонецПериода</dcscor:parameter>
-					<dcsset:userSettingID>3503d50f-ca1a-4ca2-a7ad-aedd3750f51a</dcsset:userSettingID>
-				</dcscor:item>
-			</dcsset:dataParameters>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Студент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:Field">Студент1</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
