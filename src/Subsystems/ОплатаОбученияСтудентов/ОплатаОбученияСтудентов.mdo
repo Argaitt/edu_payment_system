@@ -14,8 +14,8 @@
   <content>InformationRegister.РегистрОпераций</content>
   <content>CommonCommand.РучноеНачислениеПениСтудентам</content>
   <content>InformationRegister.РегистрНоминалаПени</content>
-  <content>Report.СтудентОтчет</content>
   <content>Report.ОперацииОтчет</content>
   <content>Report.СтудентыОтчет</content>
   <content>Report.ДолжникиОтчет</content>
+  <content>Report.СтудентОтчет</content>
 </mdclass:Subsystem>

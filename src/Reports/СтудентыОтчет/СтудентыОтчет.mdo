@@ -11,7 +11,7 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.СтудентыОтчет.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
-  <templates uuid="4ad80c6b-6ab3-414b-b62b-5d76d69516ba">
+  <templates uuid="e6538594-5215-4604-93d0-73ff35487ec8">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>

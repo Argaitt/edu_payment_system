@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0092ef0-c244-4fa6-b311-214698305961">
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="350e69ff-26d6-448c-8aba-78212f5d92a3">
   <producedTypes>
-    <objectType typeId="ce81a512-b5a4-450e-98d2-f92af987da4d" valueTypeId="50fd653c-ab23-4a3f-9cd2-fef2b4e5f448"/>
-    <managerType typeId="525d4e8b-d502-4ef4-9b2c-53746fcac27e" valueTypeId="9aa72d66-e2fc-4bfb-b8fb-1e8435c594c9"/>
+    <objectType typeId="55b40cb7-ce76-4594-9b74-905dc6af0c61" valueTypeId="0122daf1-d523-4428-b092-ee182e15a06e"/>
+    <managerType typeId="8cc8a290-514a-4db4-8a4d-3e4a00374617" valueTypeId="39b919f9-b9cd-4b41-81fc-972e9e7dfb51"/>
   </producedTypes>
   <name>СтудентОтчет</name>
   <synonym>
@@ -11,7 +11,7 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.СтудентОтчет.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
-  <templates uuid="5336b74a-f0fd-4337-b7e3-6852144222be">
+  <templates uuid="21e209d8-44ca-4781-b974-0db631b42851">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>
