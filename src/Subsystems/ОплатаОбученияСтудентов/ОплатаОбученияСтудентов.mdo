@@ -14,4 +14,6 @@
   <content>InformationRegister.РегистрОпераций</content>
   <content>CommonCommand.РучноеНачислениеПениСтудентам</content>
   <content>InformationRegister.РегистрНоминалаПени</content>
+  <content>Catalog.Льготы</content>
+  <content>Catalog.ДополнительныеНачисления</content>
 </mdclass:Subsystem>
