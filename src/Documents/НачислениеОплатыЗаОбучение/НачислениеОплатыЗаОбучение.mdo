@@ -15,6 +15,16 @@
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.НачислениеОплатыЗаОбучение.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выставления</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
@@ -23,6 +33,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.НачислениеОплатыЗаОбучение.Form.ФормаНачисленияОплаты</defaultObjectForm>
   <registerRecords>AccumulationRegister.ОстаткиНачисленийСтудентов</registerRecords>
   <registerRecords>InformationRegister.РегистрОпераций</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
@@ -38,35 +49,6 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="2f1a38f5-3625-444b-87c1-55f14f1c0134">
-    <name>СуммаЗачисленнойОплаты</name>
-    <synonym>
-      <key>ru</key>
-      <value>Сумма зачисленной оплаты</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>15</precision>
-        <scale>2</scale>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <format>
-      <key>ru</key>
-      <value>ЧЦ=15; ЧДЦ=2</value>
-    </format>
-    <editFormat>
-      <key>ru</key>
-      <value>ЧЦ=15; ЧДЦ=2</value>
-    </editFormat>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -90,4 +72,104 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="def73678-c7e9-4242-b702-811f9d8bf8b7">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7edaff69-43ff-4557-9fdf-0943745c153c">
+    <name>Льгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Льгота</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Льготы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a6c7cbf3-45c7-4fd2-a5f9-292772e1053f">
+    <name>ДополнительныеНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные начисления</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДополнительныеНачисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f1a38f5-3625-444b-87c1-55f14f1c0134">
+    <name>СуммаЗачисленнойОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма зачисленной оплаты</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=2</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=2</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <createOnInput>DontUse</createOnInput>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="521a2b6e-76e2-462a-99ef-fd652c4aef1c">
+    <name>ФормаНачисленияОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма начисления оплаты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="79747ff2-9218-47ac-ae3d-1b78e2223c08">
+    <producedTypes>
+      <objectType typeId="f28394bd-dadc-4659-b049-7b5304fc0d39" valueTypeId="20d59dba-eca4-4359-9759-9b0a94877742"/>
+      <rowType typeId="462c2ed6-e50c-4d4b-89a5-31608487b497" valueTypeId="e9294ae2-083b-434f-9ebd-c2e96a0e4930"/>
+    </producedTypes>
+    <name>ТабличнаяЧастьНачислениеОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть начисление оплаты</value>
+    </synonym>
+  </tabularSections>
 </mdclass:Document>

@@ -6,6 +6,11 @@
     <value>Скрытая часть</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.НачислениеПениПоЗадолженности</content>
   <content>Document.ПогашениеПениПоЗадолженности</content>

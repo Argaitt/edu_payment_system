@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="220fbd7a-2d11-4b79-9b2c-1f65621284c1">
+  <producedTypes>
+    <objectType typeId="585564d5-6971-46bc-99ab-9731f2974c99" valueTypeId="30db3334-e132-49d5-8c53-83bc8e94a4fd"/>
+    <refType typeId="e329e0c0-0456-4633-9145-e32d27b8f691" valueTypeId="b2f838ec-8847-4e3a-8de0-a871f53e3879"/>
+    <selectionType typeId="132baca4-0401-4699-ae98-33e8908d0e94" valueTypeId="fb5deae7-49a9-4a13-b469-66c08f61afac"/>
+    <listType typeId="f30ac1b4-bda7-4a41-b982-6e98ee499970" valueTypeId="cee6409f-78c2-411d-a502-114ab344f745"/>
+    <managerType typeId="6beed0b2-ee56-4ad1-92a1-46ae099aaeb7" valueTypeId="a23508e6-d8cc-4858-a0fb-c55de2c2a417"/>
+  </producedTypes>
+  <name>ДополнительныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДополнительныеНачисления.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ДополнительныеНачисления.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="8a98fb53-3aa8-4866-bd57-240e35cb5b3b">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
