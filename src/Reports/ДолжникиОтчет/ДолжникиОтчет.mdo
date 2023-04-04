@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff7c26fe-5ea0-470c-94d9-f6c9b2d8ef79">
+  <producedTypes>
+    <objectType typeId="4dcd72ef-134a-403d-a093-caf858ed7cf7" valueTypeId="3b6d77a4-4fb2-4a43-8f68-8386977cd248"/>
+    <managerType typeId="34e0005d-0797-468b-8496-3a10e3aa236c" valueTypeId="6b792f17-a2ba-4e9e-bdca-82e07b6f4699"/>
+  </producedTypes>
+  <name>ДолжникиОтчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должники отчет</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДолжникиОтчет.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9cb65e63-016f-43e8-8adb-1f54bac9082f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
