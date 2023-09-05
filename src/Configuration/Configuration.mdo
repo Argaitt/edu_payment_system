@@ -45,11 +45,17 @@
   <scheduledJobs>ScheduledJob.НачислениеПениСтудентам</scheduledJobs>
   <commonCommands>CommonCommand.РучноеНачислениеПениСтудентам</commonCommands>
   <catalogs>Catalog.Группы</catalogs>
+  <catalogs>Catalog.ДополнительныеНачисления</catalogs>
+  <catalogs>Catalog.Льготы</catalogs>
   <catalogs>Catalog.Студенты</catalogs>
   <documents>Document.НачислениеОплатыЗаОбучение</documents>
   <documents>Document.НачислениеПениПоЗадолженности</documents>
   <documents>Document.ПогашениеОплатыЗаОбучение</documents>
   <documents>Document.ПогашениеПениПоЗадолженности</documents>
+  <reports>Report.ДолжникиОтчет</reports>
+  <reports>Report.ОперацииОтчет</reports>
+  <reports>Report.СтудентОтчет</reports>
+  <reports>Report.СтудентыОтчет</reports>
   <informationRegisters>InformationRegister.РегистрНоминалаПени</informationRegisters>
   <informationRegisters>InformationRegister.РегистрОпераций</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНачисленийСтудентов</accumulationRegisters>
