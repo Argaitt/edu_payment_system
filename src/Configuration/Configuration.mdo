@@ -48,6 +48,7 @@
   <catalogs>Catalog.ДополнительныеНачисления</catalogs>
   <catalogs>Catalog.Льготы</catalogs>
   <catalogs>Catalog.Студенты</catalogs>
+  <documents>Document.Виталина</documents>
   <documents>Document.НачислениеОплатыЗаОбучение</documents>
   <documents>Document.НачислениеПениПоЗадолженности</documents>
   <documents>Document.ПогашениеОплатыЗаОбучение</documents>
